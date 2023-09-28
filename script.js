@@ -237,7 +237,7 @@ let score = JSON.parse(localStorage.getItem('score')) || {
     swal({
       title: "ARE YOU READY KIDSS!!",
       text: `AY AY CAPTAIN!
-               I CANT HEREE YOU!
+               I CAN'T HEAR YOU!
                AY AY CAPTAIN `,
       icon: "info",
       button: "START!",
