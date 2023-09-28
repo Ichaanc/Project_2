@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Skranji', cursive;
+  box-sizing: border-box;
+}
+
+body {
+    color: white;
+   
+  }
+
+  h1 {
+    font-size: 72px;
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      color-stop(0.03, rgb(140, 178, 235)),
+      color-stop(0.52, rgb(16, 236, 34)),
+      color-stop(0.76, rgb(58, 70, 241))
+  );
+     background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.hero{
+  background-image: url(BG/b2.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+  
+  .title {
+    font-size: 100px;
+    font-weight: bold;
+    filter: drop-shadow( 1rem 0 0.5rem black );
+    font-family: 'Press Start 2P', cursive!important;
+  }
+  
+  .move-icon {
+    height: 50px;
+  }
+  
+  .move1{
+      background-color: #12b161;
+      border: 0;
+      border-radius: 56px;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      outline: 0;
+      padding: 16px 21px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      transition: all .3s;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+    .move1:before {
+      background-color: initial;
+      background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+      border-radius: 125px;
+      content: "";
+      height: 50%;
+      left: 4%;
+      opacity: .5;
+      position: absolute;
+      top: 0;
+      transition: all .3s;
+      width: 92%;
+    }
+    
+    .move1:hover {
+      box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+      transform: scale(1.05);
+    }
+    
+    @media (min-width: 768px) {
+      .move1 {
+        padding: 16px 48px;
+      }
+    }
+  
+    /* 2 */
+    .move2{
+      background-color: #c1d40e;
+      border: 0;
+      border-radius: 56px;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      outline: 0;
+      padding: 16px 21px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      transition: all .3s;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+    .move2:before {
+      background-color: initial;
+      background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+      border-radius: 125px;
+      content: "";
+      height: 50%;
+      left: 4%;
+      opacity: .5;
+      position: absolute;
+      top: 0;
+      transition: all .3s;
+      width: 92%;
+    }
+    
+    .move2:hover {
+      box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+      transform: scale(1.05);
+    }
+    
+    @media (min-width: 768px) {
+      .move2 {
+        padding: 16px 48px;
+      }
+    }
+    /* 3 */
+    .move3{
+      background-color: #f00d0d;
+      border: 0;
+      border-radius: 56px;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      outline: 0;
+      padding: 16px 21px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      transition: all .3s;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+    .move3:before {
+      background-color: initial;
+      background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+      border-radius: 125px;
+      content: "";
+      height: 50%;
+      left: 4%;
+      opacity: .5;
+      position: absolute;
+      top: 0;
+      transition: all .3s;
+      width: 92%;
+    }
+    
+    .move3:hover {
+      box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+      transform: scale(1.05);
+    }
+    
+    @media (min-width: 768px) {
+      .move3 {
+        padding: 16px 48px;
+      }
+    }
+  .result {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+  
+  .score {
+    margin-top: 60px;
+  }
+  
+
+
+.reset-score-button {
+  background-color: #3DD1E7;
+  border: 0 solid #E5E7EB;
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .75rem 1.65rem;
+  position: absolute;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  max-width: 200px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.reset-score-button:focus {
+  outline: 0;
+}
+
+.reset-score-button:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.reset-score-button:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  .reset-score-button {
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
+  }
+}
+
+
+  .textstyle{
+    filter: drop-shadow( 1rem 0 0.5rem black ); 
+    text-decoration: none;
+  }
+
+  .move-icon {
+
+  height: 200px;
+  width: 200px;
+  }
+
+.move-icon:hover{
+  transform: scale(1.5);
+}
+
+
+.bubbles img{
+  width: 50px;
+  animation: bubble 5s linear infinite;
+}
+
+.bubbles{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -70px;
+}
+
+@keyframes bubble{
+  0%{
+    transform: translateY(0) ;
+    opacity: 0;
+  }
+  50%{
+    
+    opacity: 1;
+  }
+  75%{
+   
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(-80vh) ;
+    opacity: 0;
+  }
+}
+
+.bubbles img:nth-child(1){
+  animation-delay: 2s;
+  width: 25px;
+}
+.bubbles img:nth-child(2){
+  animation-delay: 1s;
+}
+.bubbles img:nth-child(3){
+  animation-delay: 3s;
+  width: 25px;
+}
+.bubbles img:nth-child(4){
+  animation-delay: 4.5s;
+}
+.bubbles img:nth-child(5){
+  animation-delay: 3s;
+}
+.bubbles img:nth-child(6){
+  animation-delay: 2s;
+  width: 20px;
+}
+.bubbles img:nth-child(7){
+  animation-delay: 4s;
+  width: 35px;
+}
+.bubbles img:nth-child(8){
+  animation-delay: 5s;
+  width: 10px;
+}
+.bubbles img:nth-child(9){
+  animation-delay: 4s;
+  width: 20px;
+}
+.bubbles img:nth-child(1){
+  animation-delay: 2s;
+  width: 40px;
+}
