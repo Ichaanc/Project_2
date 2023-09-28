@@ -339,3 +339,23 @@ body {
   animation-delay: 2s;
   width: 40px;
 }
+.sound{
+  border: none;
+  background-color: transparent;
+  font-size: 100px;
+  position: absolute;
+  display: flex;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.sound:hover{
+ transform: scale(1.5);
+}
+.clickme{
+  position: absolute;
+  margin-top: 155px;
+  margin-left: 60px;
+  font-size: 20px;
+  color: red;
+  filter: drop-shadow( 1rem 0 0.5rem black ); 
+}

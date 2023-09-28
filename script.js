@@ -5,10 +5,14 @@ let score = JSON.parse(localStorage.getItem('score')) || {
     computerMoney: 100000
    
   };
- 
   updateScoreElement();
   
   // BUTTON CLICK
+  document.querySelector('.sound')
+  .addEventListener('click', () => {
+    bg("sound/bgmusic.wav",true);
+  });
+
   document.querySelector('.js-formula-button')
     .addEventListener('click', () => {
       plankton("sound/plankton.wav");
