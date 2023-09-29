@@ -195,8 +195,8 @@ let score = JSON.parse(localStorage.getItem('score')) || {
           buttons: true,
           dangerMode: true,
         })
-        .then((willDelete) => {
-          if (willDelete) {
+        .then((back) => {
+          if (back) {
             swal("OKAY LETS GOO 🕹️", {
               icon: "success",
             });
@@ -206,6 +206,7 @@ let score = JSON.parse(localStorage.getItem('score')) || {
           }
         });
         patrick("sound/computerwin.wav");
+
         
       } 
   }
