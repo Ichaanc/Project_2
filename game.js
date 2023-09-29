@@ -64,6 +64,7 @@ let score = JSON.parse(localStorage.getItem('score')) || {
         swal({
           title: "GOTCHA 🤑!!",
           text: `MR.KRABS GET THE MONEYYY!
+                 Player Money ➕ $10,000💸💵
                  Computer Money ➖ $10,000💸💵 `,
           icon: "success",
           button: "LETS GOO!",
@@ -97,6 +98,7 @@ let score = JSON.parse(localStorage.getItem('score')) || {
         swal({
           title: "TAHAHAHAHAHA👌🎊!!",
           text:  `SPONGEBOB ATE THE BURGERR!
+                  Player Money ➕ $10,000💸💵
                   Computer Money ➖ $10,000💸💵 `,
           icon: "success",
           button: "LETS GO GARRYY!",
@@ -120,6 +122,7 @@ let score = JSON.parse(localStorage.getItem('score')) || {
         swal({
           title: "BWUHAHAH-WHOHAHAHA 🧪!!",
           text: `PLANKTON TAKE THE FORMULA 🔬!
+                 Player Money ➕ $10,000💸💵
                  Computer Money ➖ $10,000💸💵 `,
           icon: "success",
           button: "KAREN GO!",
@@ -258,6 +261,7 @@ let score = JSON.parse(localStorage.getItem('score')) || {
       icon: "info",
       button: "RESET!",
     });
+    sandy("sound/sandyreset.wav");
   }
   function start(){
     swal({
@@ -268,6 +272,7 @@ let score = JSON.parse(localStorage.getItem('score')) || {
       icon: "info",
       button: "START!",
     });
+    captain("sound/ayaycaptain.wav");
   }
 // alert effect end
 
@@ -290,6 +295,14 @@ let score = JSON.parse(localStorage.getItem('score')) || {
     audio.play();
   }
   function squid(audioName){
+    let audio = new Audio(audioName);
+    audio.play();
+  }
+  function sandy(audioName){
+    let audio = new Audio(audioName);
+    audio.play();
+  }
+  function captain(audioName){
     let audio = new Audio(audioName);
     audio.play();
   }
