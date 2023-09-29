@@ -11,12 +11,16 @@ pause.addEventListener('click',()=> {
  audio.pause();
 })
 //  play pause end
+
+// save point
 let score = JSON.parse(localStorage.getItem('score')) || {
     computerMoney: 100000,
     playerMoney: 100000
    
   };
   updateScoreElement();
+  // save point end
+
   
   // BUTTON CLICK
   document.querySelector('.js-formula-button')
@@ -24,6 +28,8 @@ let score = JSON.parse(localStorage.getItem('score')) || {
       plankton("sound/plankton.wav");
       playGame('formula');
     });
+// BUTTON CLICK end
+
   
   document.querySelector('.js-burger-button')
     .addEventListener('click', () => {
@@ -161,6 +167,10 @@ let score = JSON.parse(localStorage.getItem('score')) || {
   <img src="${computerMove}.webp" class="move-icon">
   Computer`;
   }
+// PICK MOVE end
+
+
+
   // UPDATE SCORE
   function updateScoreElement() {
     document.querySelector('.js-score')
@@ -216,6 +226,9 @@ let score = JSON.parse(localStorage.getItem('score')) || {
         
       } 
   }
+ // UPDATE SCORE end
+
+
   // COMPUTER RANDOM PICK
   function pickComputerMove() {
     const randomNumber = Math.random();
@@ -232,6 +245,11 @@ let score = JSON.parse(localStorage.getItem('score')) || {
   
     return computerMove;
   }
+ // COMPUTER RANDOM PICK end
+
+
+
+  // alert effect
   function alert(){
     swal({
       title: "MONEY RESET 💰💰!!",
@@ -251,7 +269,7 @@ let score = JSON.parse(localStorage.getItem('score')) || {
       button: "START!",
     });
   }
-
+// alert effect end
 
   // sounds
   function sponge(audioName){
@@ -275,3 +293,4 @@ let score = JSON.parse(localStorage.getItem('score')) || {
     let audio = new Audio(audioName);
     audio.play();
   }
+  // sound end
