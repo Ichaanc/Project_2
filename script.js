@@ -1,4 +1,3 @@
-start();
 bg("sound/bgmusic.wav",true);
 let score = JSON.parse(localStorage.getItem('score')) || {
     computerMoney: 100000,
