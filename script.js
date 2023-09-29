@@ -1,8 +1,8 @@
 start();
 bg("sound/bgmusic.wav",true);
 let score = JSON.parse(localStorage.getItem('score')) || {
-    playerMoney: 100000,
-    computerMoney: 100000
+    computerMoney: 100000,
+    playerMoney: 100000
    
   };
   updateScoreElement();
@@ -138,9 +138,10 @@ let score = JSON.parse(localStorage.getItem('score')) || {
     }
   
     if (result === 'You win.') {
-      score.playerMoney -= 10000;
+      score.computerMoney-= 10000;
+      score.playerMoney += 10000;
     } else if (result === 'You lose.') {
-      score.computerMoney -= 10000;
+      score.playerMoney -= 10000;
     } 
 
     localStorage.setItem('score', JSON.stringify(score));
@@ -157,10 +158,10 @@ let score = JSON.parse(localStorage.getItem('score')) || {
   // UPDATE SCORE
   function updateScoreElement() {
     document.querySelector('.js-score')
-      .innerHTML = `💰${score.computerMoney} \\ 💰${score.playerMoney}`;
-      if (score.playerMoney === -10000) {
+      .innerHTML = `💰${score.playerMoney} \\ 💰${score.computerMoney}`;
+      if (score.computerMoney=== -10000) {
+        score.computerMoney= 100000;
         score.playerMoney = 100000;
-        score.computerMoney = 100000;
         localStorage.removeItem('score');
         updateScoreElement();
         swal({
@@ -182,9 +183,9 @@ let score = JSON.parse(localStorage.getItem('score')) || {
         });
         squid("sound/playerwin.wav");
         
-      } else if (score.computerMoney === -10000) {
+      } else if (score.playerMoney === -10000) {
+        score.computerMoney= 100000;
         score.playerMoney = 100000;
-        score.computerMoney = 100000;
         localStorage.removeItem('score');
         updateScoreElement();  
         swal({
