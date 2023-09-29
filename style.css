@@ -343,10 +343,20 @@ body {
   animation-delay: 2s;
   width: 40px;
 }
-.sound{
+.play{
   border: none;
   background-color: transparent;
-  font-size: 100px;
+  font-size: 50px;
+  position: absolute;
+  display: flex;
+  margin-left: 95px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.pause{
+  border: none;
+  background-color: transparent;
+  font-size: 50px;
   position: absolute;
   display: flex;
   margin-left: 150px;
@@ -354,26 +364,17 @@ body {
   cursor: pointer;
 }
 
+
 .back{
   border: none;
   background-color: transparent;
-  font-size: 100px;
+  font-size: 50px;
   position: absolute;
   display: flex;
   margin-left: 30px;
   margin-top: 30px;
   cursor: pointer;
 }
-.clickme{
-  position: absolute;
-  margin-top: 155px;
-  margin-left: 190px;
-  font-size: 20px;
-  color: rgb(169, 238, 79);
-  filter: drop-shadow( 1rem 0 0.5rem black ); 
-  cursor: pointer;
-}
-
 .rulespic{
   height: 150px;
   width: 150px;

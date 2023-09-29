@@ -1,4 +1,15 @@
-bg("sound/bgmusic.wav",true);
+//  play and pause
+ let play = document.querySelector('.play');
+ let pause = document.querySelector('.pause');
+ let audio = new Audio('sound/bgmusic.wav');
+
+ play.addEventListener('click',()=> {
+  audio.play();
+ })
+ pause.addEventListener('click',()=> {
+  audio.pause();
+ })
+//  play pause end
 let score = JSON.parse(localStorage.getItem('score')) || {
     computerMoney: 100000,
     playerMoney: 100000
@@ -7,19 +18,7 @@ let score = JSON.parse(localStorage.getItem('score')) || {
   updateScoreElement();
   
   // BUTTON CLICK
-  document.querySelector('.sound')
-  .addEventListener('click', () => {
-    bg("sound/bgmusic.wav",true);
-  });
-  document.querySelector('.clickme')
-  .addEventListener('click', () => {
-    bg("sound/bgmusic.wav",true);
-  });
-  document.querySelector('.music')
-  .addEventListener('click', () => {
-    bg("sound/bgmusic.wav",true);
-  });
-
+ 
   document.querySelector('.js-formula-button')
     .addEventListener('click', () => {
       plankton("sound/plankton.wav");
@@ -276,8 +275,4 @@ let score = JSON.parse(localStorage.getItem('score')) || {
     let audio = new Audio(audioName);
     audio.play();
   }
-  function bg(audioName,loop){
-    let audio = new Audio(audioName);
-    audio.loop = loop;
-    audio.play();
-  }
+ 
