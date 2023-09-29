@@ -351,6 +351,7 @@ body {
   display: flex;
   margin-left: 150px;
   margin-top: 30px;
+  cursor: pointer;
 }
 
 .back{
@@ -361,6 +362,7 @@ body {
   display: flex;
   margin-left: 30px;
   margin-top: 30px;
+  cursor: pointer;
 }
 .clickme{
   position: absolute;
@@ -369,6 +371,7 @@ body {
   font-size: 20px;
   color: rgb(169, 238, 79);
   filter: drop-shadow( 1rem 0 0.5rem black ); 
+  cursor: pointer;
 }
 
 .rulespic{

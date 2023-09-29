@@ -12,6 +12,10 @@ let score = JSON.parse(localStorage.getItem('score')) || {
   .addEventListener('click', () => {
     bg("sound/bgmusic.wav",true);
   });
+  document.querySelector('.clickme')
+  .addEventListener('click', () => {
+    bg("sound/bgmusic.wav",true);
+  });
 
   document.querySelector('.js-formula-button')
     .addEventListener('click', () => {
